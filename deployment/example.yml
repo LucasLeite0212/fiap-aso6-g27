@@ -27,32 +27,4 @@ spec:
       labels:
         app: blog-django-py
         deploymentconfig: blog-django-py
-    spec:
-      containers:
-        - name: blog-django-py
-          image: >-
-            image-registry.openshift-image-registry.svc:5000/fiap-aso6-g27/blog-django-py@sha256:f15ec0bc4dbc0186250f26dcf92153da2834ea19023a76042e978c6d12ae7e1f
-          ports:
-            - containerPort: 8080
-              protocol: TCP
-          env:
-            - name: BLOG_BANNER_COLOR
-              value: blue
-            - name: DATABASE_URL
-              value: 'postgresql://sampledb:sampledb@sample-database:5432/sampledb'
-          resources: {}
-          terminationMessagePath: /dev/termination-log
-          terminationMessagePolicy: File
-          imagePullPolicy: Always
-      restartPolicy: Always
-      terminationGracePeriodSeconds: 30
-      dnsPolicy: ClusterFirst
-      securityContext: {}
-      schedulerName: default-scheduler
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 25%
-      maxSurge: 25%
-  revisionHistoryLimit: 10
-  progressDeadlineSeconds: 600
+
