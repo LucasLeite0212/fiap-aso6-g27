@@ -31,7 +31,7 @@ metadata:
     openshift.io/deployment.name: sample-database-1
     openshift.io/generated-by: OpenShiftNewApp
     openshift.io/scc: restricted
-  selfLink: /api/v1/namespaces/fiap-aso6-g27/pods/sample-database-1-ds4d4
+  selfLink: /api/v1/namespaces/fiap/pods/sample-database-1-ds4d4
   resourceVersion: '13293772'
   name: sample-database-1-ds4d4
   uid: 775ab705-7ed9-4539-b1a8-d5ca9371775c
@@ -208,7 +208,7 @@ metadata:
               .: {}
               'f:ip': {}
           'f:startTime': {}
-  namespace: fiap-aso6-g27
+  namespace: fiap
   ownerReferences:
     - apiVersion: v1
       kind: ReplicationController

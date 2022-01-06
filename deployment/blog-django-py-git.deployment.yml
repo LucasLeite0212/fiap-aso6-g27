@@ -6,7 +6,7 @@ metadata:
     app.openshift.io/vcs-uri: 'https://github.com/openshift-instruqt/blog-django-py'
     openshift.io/generated-by: OpenShiftWebConsole
   selfLink: >-
-    /apis/build.openshift.io/v1/namespaces/fiap-aso6-g27/buildconfigs/blog-django-py
+    /apis/build.openshift.io/v1/namespaces/fiap/buildconfigs/blog-django-py
   resourceVersion: '13286801'
   name: blog-django-py
   uid: fd84342b-36f3-40be-89f3-d06947ff6563
@@ -65,7 +65,7 @@ metadata:
           'f:triggers': {}
         'f:status':
           'f:lastVersion': {}
-  namespace: fiap-aso6-g27
+  namespace: fiap
   labels:
     app: blog-django-py
     app.kubernetes.io/component: blog-django-py
