@@ -1,0 +1,18 @@
+apiVersion: "v1"
+kind: "BuildConfig"
+metadata:
+  name: "blog-django-py"
+spec:
+  output:
+    to:
+      kind: "ImageStreamTag"
+      name: "blog-django-py:latest"
+  source:
+    git:
+      uri: "https://github.com/openshift-instruqt/blog-django-py"
+  strategy:
+    sourceStrategy:
+      from:
+        kind: "ImageStreamTag"
+        namespace: openshift
+        name: 'python:3.8-ubi7'
