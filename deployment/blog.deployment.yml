@@ -25,7 +25,9 @@ spec:
     spec:
       containers:
         - name: blog-django-py-git
-          image: fer-freitas/blog-django-py
+          image: 'openshiftkatacoda/blog-django-py:latest'
+          imagePullPolicy: Always
+          terminationMessagePath: /dev/termination-log
           ports:
             - containerPort: 8080
               protocol: TCP
