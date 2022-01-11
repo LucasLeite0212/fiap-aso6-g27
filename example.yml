@@ -18,10 +18,10 @@ metadata:
     image.openshift.io/triggers: >-
       [{"from":{"kind":"ImageStreamTag","name":"blog-django-py:latest","namespace":"fiap"},"fieldPath":"spec.template.spec.containers[?(@.name==\"blog-django-py\")].image","pause":"false"}]
     openshift.io/generated-by: OpenShiftWebConsole
-  selfLink: /apis/apps/v1/namespaces/fiap-aso-grupo14/deployments/blog-django-py
+  selfLink: /apis/apps/v1/namespaces/fiap/deployments/blog-django-py
   name: blog-django-py  
   generation: 2
-  namespace: fiap-aso-grupo14
+  namespace: fiap
   labels:
     app: blog-django-py
     app.kubernetes.io/component: blog-django-py
@@ -97,7 +97,7 @@ metadata:
     openshift.io/generated-by: OpenShiftWebConsole
   selfLink: /api/v1/namespaces/fiap/services/blog-django-py
   name: blog-django-py
-  namespace: fiap-aso-grupo14
+  namespace: fiap
   labels:
     app: blog-django-py
     app.kubernetes.io/component: blog-django-py
