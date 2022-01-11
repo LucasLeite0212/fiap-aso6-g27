@@ -7,7 +7,7 @@ LABEL description="A custom Apache container based on UBI 8"
 RUN yum install -y httpd && \
     yum clean all
 
-RUN echo "Hello Grupo 27 RM340642" > /var/www/html/index.html
+RUN echo "Hello Grupo 27 RM340642 RM340545 RM341794" > /var/www/html/index.html
 
 EXPOSE 80
 
