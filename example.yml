@@ -4,7 +4,7 @@ metadata:
   name: blog-config-map
   namespace: fiap-aso6-g27
 data:
-  BLOG_SITE_NAME: FIAP Grupo 14
+  BLOG_SITE_NAME: FIAP Grupo 27
   BLOG_BANNER_COLOR: blue
 ---
 kind: Deployment
