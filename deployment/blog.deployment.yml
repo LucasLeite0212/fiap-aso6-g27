@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: blog-django-py-git
   generation: 2
-  namespace: fiap
+  namespace: fiap-g27
   labels:
     app: blog-django-py-git
     app.kubernetes.io/component: blog-django-py-git
@@ -34,7 +34,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: BLOG_SITE_NAME
-              value: Exemplo Blog Grupo 27 - Fiap
+              value: Exemplo Blog Grupo 27 - fiap-g27
             - name: BLOG_BANNER_COLOR
               value: blue
             - name: DATABASE_SERVICE_NAME
