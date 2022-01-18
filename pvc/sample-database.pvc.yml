@@ -2,7 +2,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: sample-database
-  namespace: fiap-g27
+  namespace: fiap-aso6-g27-test
 spec:
   accessModes:
     - ReadWriteOnce
