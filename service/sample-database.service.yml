@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: sample-database-service
-  namespace: fiap-aso6-g27-test
+  namespace: fiap
   labels:
     app: sample-database-service
 spec:
